@@ -1,0 +1,86 @@
+# Question 1
+print("Welcome to Chanakan's original pizza store!")
+print("It's good to see you here...")
+print("What is your name?")
+user_name <- readLines("stdin", n=1)
+print( paste("Hello", user_name, ", We will let you order soon!") )
+
+
+# Question 2
+order_pizza <- function(){
+print("Which topping would you like to order today")
+print("1:DoubleCheese 2:Seafood 3:Deluxe")
+ordering <- readLines(con="stdin",n=1)
+if(ordering == "1") {
+  print("DoubleCheese, Got it!")
+} else if(ordering == "2") {
+  print("Seafood, Got it!")
+} else if(ordering == "3") {
+  print("Deluxe, Got it!")
+} else {
+  print("Something wrong.. Please select again.")
+  order_pizza()
+  }
+}
+order_pizza()
+
+# Question 3 
+order_size <- function(){
+  print("Which size would you like to order?")
+  print("1:Large for 4-6 person 2:Regular 3-4 person 3:Small for 1-2 person")
+  size <- readLines(con="stdin",n=1)
+if(size == "1") {
+  print("Large size for 4-6 Person.")
+} else if(size == "2") {
+  print("Regular size for 3-4 Person.")
+} else if(size == "3") {
+  print("Small size for 4-6 Person.")
+} else {
+  print("Something wrong.. Please select again.")
+  order_size()
+ }
+}
+order_size()
+
+        
+#Question 4
+order_crust <- function() {
+print("Which pizza's crust would you like to order?")
+print("1:CrispyThin 2:RegularDough")
+
+crust <- readLines(con="stdin",n=1)
+if(crust == "1"){
+  print("Crispy Thin")
+} else if(crust == "2") {
+  print("Regular Dough")
+} else {
+  print("Something wrong.. Please select again.")
+  order_crust()
+ }
+}
+order_crust()
+
+#Question 5
+payment <- function(){
+  print("Would you like to pay by Cash, Credit Card or QRCode?")
+  print("1:Cash 2:CreditCard 3:QRCode")
+  pay_1 <- readLines(con="stdin",n=1)
+if(pay_1 == "1"){
+  print("Please prepare your cash at the destination..")
+} else if (pay_1 == "2"){
+  print("We will transfer to our payment gateway soon..")
+} else if (pay_1 == "3"){
+  print("QR code will be shown soon.")
+} else {
+  print("Something wrong.. Please try again.")
+  payment()
+ }
+}
+payment()
+
+#Question 6
+print("We have received your order now. Thank you for choosing Chanakan's Orginal Pizza!")
+print("Your pizza will be arrived within 30 minutes! Enjoy!")
+
+-------
+https://replit.com/@ChanakanDeepras/Batch06ChatbotPizzaChanakan?v=1
